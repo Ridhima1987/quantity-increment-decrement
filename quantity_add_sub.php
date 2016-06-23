@@ -1,3 +1,24 @@
+<script>
+    $(document).ready(function() {
+         $(".up").click(function(){
+         var $incdec = $(this).prev();
+         
+          $incdec.val(parseInt($incdec.val())+1);
+        
+});
+$(".down").click(function(){
+      var $incdec = $(this).next();
+        if(parseInt($incdec.val())>1){
+        $incdec.val(parseInt($incdec.val())-1);
+      }
+     });
+});
+</script>
+
+
+
+
+
 <article class="module width_full">
   <form method="post">
     <header><h3>Family Package</h3></header>
